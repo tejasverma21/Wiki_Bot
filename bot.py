@@ -4,7 +4,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from newsapi import NewsApiClient
 
 
-api = NewsApiClient(api_key='f2b9bbd328b944f9a46c76522d63c3b4')
+api = NewsApiClient(api_key='ENTER YOUR API KEY HERE')
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
 
@@ -62,7 +62,7 @@ def main():
     # Create the Updater and pass it your bot's token.
     # Make sure to set use_context=True to use the new context based callbacks
     # Post version 12 this will no longer be necessary
-    updater = Updater('1612968822:AAHTkrqqj6YFN6iZuZTV6AOJlKwuMxZole0', use_context=True)
+    updater = Updater('ENTER YOUR UNIQUE BOT CODE', use_context=True)
 
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
